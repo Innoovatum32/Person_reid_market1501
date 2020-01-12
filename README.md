@@ -3,7 +3,7 @@
 ## Datasets
 
 ### Market-1501
-[3]Person re-identitification dataset collected in front of a supermarket from six different cameras. The dataset
+Person re-identitification dataset collected in front of a supermarket from six different cameras. The dataset
 contains 1501 different identities that are captured by at least two cameras.
 [Sample code](https://github.com/justayak/pak/blob/master/samples/Market1501.ipynb)
 
@@ -17,14 +17,8 @@ mot15 = Market1501('/place/to/store/the/data')
 X, Y = m1501.get_train()
 ```
 
-![market1501](https://user-images.githubusercontent.com/831215/32785225-4afc5884-c951-11e7-95b1-542c11e7736e.png)
-#### License
-
-[Creative Commons Attribution-NonCommercial-ShareAlike 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/). 
-This means that you must attribute the work in the manner specified by the authors, you may not use this work for commercial purposes and if you alter, transform, or build upon this work, you may distribute the resulting work only under the same license. If you are interested in commercial usage you can contact us for further options.
-
-
 ## SOFTWARE REQUIREMENTS
+
 ## INSTALLATION
 ## STEPS
 ## OUTPUT
@@ -81,4 +75,12 @@ pip install transforms3d
 
 ## [Evaluation](https://github.com/justayak/pak/tree/master/pak/evaluation)
 
-This library offers some of the common evaluation strategies
+
+Market-1501 dataset
+
+@inproceedings{zheng2015scalable,
+  title={Scalable Person Re-identification: A Benchmark},
+  author={Zheng, Liang and Shen, Liyue and Tian, Lu and Wang, Shengjin and Wang, Jingdong and Tian, Qi},
+  booktitle={Computer Vision, IEEE International Conference on},
+  year={2015}
+}
