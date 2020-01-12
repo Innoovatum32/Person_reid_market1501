@@ -1,6 +1,6 @@
 # Person_reid_market1501
 
-## Datasets
+## Dataset
 
 ### Market-1501
 Person re-identitification dataset collected in front of a supermarket from six different cameras. The dataset
@@ -17,63 +17,50 @@ mot15 = Market1501('/place/to/store/the/data')
 X, Y = m1501.get_train()
 ```
 
-## SOFTWARE REQUIREMENTS
-
-## INSTALLATION
-## STEPS
-## OUTPUT
-
-
-## Install
-Install the library using pip:
-```bash
-pip install git+https://github.com/jutanke/pak.git
-```
-
-### Requirements 
-
+### SOFTWARE REQUIREMENTS
+* Anaconda/Miniconda
 * python >=3.5
 * numpy
 * scipy
 * skimage
 * h5py
-* pppr (for evaluation)
 
-#### Install [pppr](https://github.com/justayak/pppr)
-```bash
-pip install git+https://github.com/justayak/pppr.git
-```
 
-### spacepy
-Some datasets require to read the CDF file format from NASA. Install as follows [(taken from stackoverflow)](https://stackoverflow.com/questions/37232008/how-read-common-data-formatcdf-in-python).
-```bash 
-wget -r -l1 -np -nd -nc http://cdaweb.gsfc.nasa.gov/pub/software/cdf/dist/latest-release/linux/ -A cdf*-dist-all.tar.gz
-tar xf cdf*-dist-all.tar.gz -C ./
-cd cdf*dist
-apt install build-essential gfortran libncurses5-dev
-make OS=linux ENV=gnu CURSES=yes FORTRAN=no UCOPTIONS=-O2 SHARED=yes -j4 all
-make install #no sudo
-```
-Add to .bashrc:
+### INSTALLATION
 ```bash
-export CDF_BASE=$HOME/Libraries/cdf/cdf36_3-dist
-export CDF_INC=$CDF_BASE/include
-export CDF_LIB=$CDF_BASE/lib
-export CDF_BIN=$CDF_BASE/bin
-export LD_LIBRARY_PATH=$CDF_BASE/lib:$LD_LIBRARY_PATH
+pip install tensorflow==1.8
+pip install Keras==2.1.3
+pip install git
+pip install https://github.com/jutanke/pak.git
+conda install -c menpo opencv3 
+pip install https://github.com/jutanke/person_reid.git
 ```
-Install spacepy
+Installations can also be made with jupyter nootebook, make sure to use ! before the installation command 
 ```bash
-pip install git+https://github.com/spacepy/spacepy.git
+!pip install tensorflow==1.8
 ```
+For commands like conda install -c menpo opencv3 which require users to interact with the prompt Eg: proceed(y/n)? use 
+```bash
+conda install -c menpo opencv3 --yes
+```
+## STEPS
+* Start menu search -> spyder
+* Download the git repo --> https://github.com/Innoovatum32/Person_reid_market1501.git
+* cd path/to/repo in console -spyder
+* Put the images for person-reid into the folred - images01 
+* Install the above mentioned libraries
+* change the path for reading images to the your/path
+Eg:
+```bash
+image02 = cv2.cvtColor(cv2.imread('path/to/your/img002.png'), cv2.COLOR_BGR2RGB)
+```
+* run the python script --> person_reid.py
 
-### transforms3d
-Some datasets require transforms3d:
-```bash
-pip install transforms3d
-```
+## OUTPUT
+* plots the given input images and prints the person re-identification score, given input could be "two images" or two lists of images to passed into the model reid(). 
+* score of the re-identification model
+![Score](https://github.com/Innoovatum32/Person_reid_market1501/blob/master/images01/Screenshot%20(36).png)
 
-## [Evaluation](https://github.com/justayak/pak/tree/master/pak/evaluation)
 
 
 Market-1501 dataset
