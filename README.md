@@ -1,1 +1,6 @@
 # Person_reid_market1501
+
+## SOFTWARE REQUIREMENTS
+## INSTALLATION
+## STEPS
+## OUTPUT
