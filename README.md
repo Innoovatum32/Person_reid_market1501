@@ -63,12 +63,12 @@ image02 = cv2.cvtColor(cv2.imread('path/to/your/img002.png'), cv2.COLOR_BGR2RGB)
 
 ## About libraries
 
-* pak
-*using pip install https://github.com/jutanke/pak.git*
+* pak:
+*using pip install https://github.com/jutanke/pak.git* - 
 Personal computer vision/deep learning dataset helper toolbox to make it less tedious to download and load common datasets. This software is not affiliated with any of the datasets but is instead just a thin helper box to ease interacting with the data.
 
-* reid
-*using pip install https://github.com/jutanke/person_reid.git*
+* reid:
+*using pip install https://github.com/jutanke/person_reid.git*-
 This library was developed using Python 3.6, numpy, Keras 2.1.3. and tensorflow 1.8, The model is a Siamese Network using DenseNet as feature extractor. uses from keras.models import Sequential, Model & keras.layers import Dense, Dropout, Input, Flatten, concatenate with two hidden layers with dense network.
 
 Market-1501 dataset
