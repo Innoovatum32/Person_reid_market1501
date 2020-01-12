@@ -5,7 +5,6 @@
 ### Market-1501
 Person re-identitification dataset collected in front of a supermarket from six different cameras. The dataset
 contains 1501 different identities that are captured by at least two cameras.
-[Sample code](https://github.com/justayak/pak/blob/master/samples/Market1501.ipynb)
 
 ```python
 from pak.datasets.Market1501 import Market1501 
